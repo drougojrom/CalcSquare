@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-um-XnL">
+                                <rect key="frame" x="457" y="140" width="123" height="54"/>
+                                <color key="backgroundColor" red="0.68998983288239646" green="0.70250400641025634" blue="0.69679099934556865" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="4ro-uS-PN1"/>
+                                </constraints>
+                                <state key="normal" title="Подсчитать"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMe-yH-53y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjr-es-MBp">
+                                <rect key="frame" x="20" y="41" width="155" height="75"/>
+                                <color key="backgroundColor" red="0.69647798432773433" green="0.7012874908564356" blue="0.70250400641025634" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="7zh-ng-ME3"/>
+                                    <constraint firstAttribute="height" constant="75" id="gcf-o3-9lM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите число" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGO-n2-qfO">
+                                <rect key="frame" x="20" y="140" width="155" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDa-A5-7gc">
+                                <rect key="frame" x="457" y="41" width="123" height="75"/>
+                                <color key="backgroundColor" red="0.6938892996167445" green="0.70250400641025634" blue="0.69872430574770439" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="FgH-JG-nuD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBS-xw-JsP">
+                                <rect key="frame" x="20" y="214" width="560" height="76"/>
+                                <color key="backgroundColor" red="0.67048106236710192" green="0.70250400641025634" blue="0.67908632271049663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="FT9-fy-bCc">
+                                        <variation key="heightClass=compact" constant="34"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Заново"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoq-G9-wtf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="top" secondItem="IDa-A5-7gc" secondAttribute="bottom" constant="24" id="4WM-jJ-3m6">
+                                <variation key="heightClass=compact" constant="17"/>
+                            </constraint>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="leading" secondItem="EGO-n2-qfO" secondAttribute="leading" id="5eM-Go-gqO"/>
+                            <constraint firstItem="IDa-A5-7gc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7hq-oW-frA"/>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="trailing" secondItem="IDa-A5-7gc" secondAttribute="trailing" id="KfH-07-3QE"/>
+                            <constraint firstItem="PBS-xw-JsP" firstAttribute="top" secondItem="EGO-n2-qfO" secondAttribute="bottom" constant="23" id="N6I-pa-SHg">
+                                <variation key="heightClass=compact" constant="22"/>
+                            </constraint>
+                            <constraint firstItem="PBS-xw-JsP" firstAttribute="leading" secondItem="EGO-n2-qfO" secondAttribute="leading" id="TSO-b1-fEu"/>
+                            <constraint firstItem="PBS-xw-JsP" firstAttribute="top" secondItem="fk5-um-XnL" secondAttribute="bottom" constant="20" id="Zur-mB-LSB">
+                                <variation key="heightClass=compact" constant="22"/>
+                            </constraint>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="d2V-kQ-JJn">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="trailing" secondItem="EGO-n2-qfO" secondAttribute="trailing" id="ffq-Dz-8eo"/>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="firstBaseline" secondItem="EGO-n2-qfO" secondAttribute="baseline" constant="2" id="iaM-4m-zcl">
+                                <variation key="heightClass=compact" constant="-1"/>
+                            </constraint>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="bottom" secondItem="IDa-A5-7gc" secondAttribute="bottom" id="kSO-Dm-5ao"/>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="trailing" secondItem="PBS-xw-JsP" secondAttribute="trailing" id="l77-jk-NnZ"/>
+                            <constraint firstItem="EGO-n2-qfO" firstAttribute="top" secondItem="Qjr-es-MBp" secondAttribute="bottom" constant="24" id="lVU-PT-sHJ">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="baseline" secondItem="EGO-n2-qfO" secondAttribute="baseline" constant="2" id="mUq-yY-Kte">
+                                <variation key="heightClass=compact" constant="-1"/>
+                            </constraint>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="onS-A5-hef"/>
+                            <constraint firstItem="Qjr-es-MBp" firstAttribute="top" secondItem="IDa-A5-7gc" secondAttribute="top" id="sua-4D-cWR"/>
+                            <constraint firstItem="fk5-um-XnL" firstAttribute="leading" secondItem="IDa-A5-7gc" secondAttribute="leading" id="zin-lT-Jno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="IDa-A5-7gc" id="sKb-ur-v4q"/>
+                        <outlet property="inputField" destination="EGO-n2-qfO" id="BCG-Mw-TEx"/>
+                        <outlet property="resultLabel" destination="Qjr-es-MBp" id="VEt-vb-VtG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="348"/>
+        </scene>
+    </scenes>
+</document>
